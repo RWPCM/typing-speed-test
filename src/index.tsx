@@ -5,11 +5,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import TypingTest from './components/TypingTest';
 import WpmChart from './components/WpmChart';
+import { TEXT_OPTIONS } from './config/textOptions';
 
-const targetText1 = "This is wonderful, I am exercising to type on a keyboard";
-const targetText2 = "C'est formidable, je m'entraîne à dactylographier";
-const targetText3 = "Es ist wunderbar, ich trainiere mich auf die Tastatur";
-const targetText = targetText2;
+// Select a random text option
+const targetText = TEXT_OPTIONS[Math.floor(Math.random() * TEXT_OPTIONS.length)];
 
 const rootElement = document.getElementById('root') as HTMLElement;
 if (!rootElement) {
