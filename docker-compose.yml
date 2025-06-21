@@ -1,0 +1,13 @@
+services:
+  web:
+    build:
+      context: .
+      target: development
+    ports:
+      - "3062:3000"
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
