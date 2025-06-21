@@ -48,7 +48,7 @@ npm start
 yarn start
 ```
 
-The application will open automatically in your default browser at `http://localhost:3000`
+The application will open automatically in your default browser at `http://localhost:3062`
 
 ## Building for Production
 
